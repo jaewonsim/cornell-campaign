@@ -1,0 +1,164 @@
+/* -------- Header and navigation -------- */
+header {
+  background-color: #b31b1b;
+}
+
+nav ul {
+  padding-left: 0;
+  width: 850px;
+}
+
+nav a {
+  padding-left: 0px;
+  margin-right: 36px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a3b7c;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav li {
+  display: inline-block;
+  margin: auto;
+}
+
+#main-menu {
+  margin-bottom: 0;
+}
+
+/* ---- Home area ---- */
+.site-subtitle {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-subtitle2 {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.site-maintitle {
+  color: #b31b1b;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.fundraiser-title {
+  color: white;
+}
+
+.giving-details {
+  background-color: #F7F7F7;
+}
+
+.instructions {
+  color: #222222;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 20px 0px 0px 0px;
+}
+
+.organizers-highlight {
+  color: #b31b1b;
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: 24px;
+}
+
+.organizers-header {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.organizers {
+  display: flex;
+}
+
+.organizer-pic {
+  margin-right: 10px;
+}
+
+.organizer-box {
+  display: flex;
+}
+
+.organizer-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.organizer-title {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* ---- Content area ---- */
+.scc-supported {
+  text-align: center;
+  background-color: #073949;
+  color: white;
+}
+
+.senior-banner {
+  background-color: whitesmoke;
+}
+
+.senior-banner h3 {
+  font-size: 18pt;
+}
+
+.scc-supported p {
+  width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.content {
+  color: #222222;
+  margin: auto;
+  padding: 30px 0px 30px 0px;
+}
+
+.content-segment {
+  padding: 30px 0px 30px 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: #b31b1b;
+  border-color: #b31b1b;
+}
+.btn-primary:hover {
+  background-color: #EF4035;
+  border-color: #EF4035;
+}
+
+
+@media (max-width: 599px) {
+  .content {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .organizers {
+      flex-direction: column;
+  }
+
+  .organizer-box {
+      margin: 0px 0px 10px 0px;
+  }
+}
