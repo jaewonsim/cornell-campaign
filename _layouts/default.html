@@ -1,38 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- DNS Preconnect -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="{{"/site.css" | relative_url}}" media="all" />
-  <title>{{ page.org_name }} | Cornell Giving Day</title>
-</head>
+{% include head.html %}
 
 <body>
-  <header>
-    <nav>
-      <div class="container-lg py-3">
-        <div class="row align-items-end text-center text-lg-start">
-          <div class="col">
-            <img class="mb-2" src="{{ "/images/givingday.png" | relative_url }}" alt="Giving day logo.">
-            <h1 class="site-subtitle m-0">Cornell Giving Day 2021</h1>
-          </div>
-          <div class="col d-lg-block d-none">
-            <h1 class="fundraiser-title float-end text-end pb-2">Fundraiser</h1>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+  {% include header.html %}
   <div class="container mt-3">
     <div class="alert alert-danger" role="alert">
       Cornell Giving Day is on March 11th, 2021. Until then, you can browse our fundraisers, but won't be able to make a gift.
@@ -61,10 +32,6 @@
       <h2 class="section-heading text-center text-lg-start">About this Organization</h2>
       <p class="instructions"> {{ page.org_bio }} Thank you for helping us move Cornell forward. </p>
     </div>
-    <div class="row mt-5">
-      <h2 class="section-heading text-center text-lg-start">Their Story</h2>
-      <p class="instructions"> {{ page.campaign_blurb }}</p>
-    </div>
     <div class="row mt-5 px-2">
       <a type="button" href="{{ page.campaign_giving_link }}" class="btn btn-primary btn-block btn-lg d-block align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
           <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
@@ -72,8 +39,6 @@
     </div>
   </div>
   {% include footer.html %}
-  <!-- Optional JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
